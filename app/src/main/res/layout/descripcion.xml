@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    android:padding="40px"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="333dp"
+        android:text="Lorem ipsum dolor sit amet, imentum ipsum. Nunc et elit ex. Morbi id efficitur turpis, vitae iaculis sapien. Aliquam risus diam, dictum vel suscipit in, lacinia ac sem. Nullam a maximus arcu, sed sodales nisl. Vestibulum id est id justo cursus efficitur. Vestibulum eleifend est a ante aliquam tristique. Ut vitae tristique neque. Praesent sed venenatis ex. Donec dapibus tellus volutpat ante commodo hendrerit. Phasellus consequat vitae ex ac egestas. Mauris erat enim, viverra in ullamcorper ut, tincidunt vel lacus. Nunc sem est, eleifend quis imperdiet in, euismod sit amet nisl."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+

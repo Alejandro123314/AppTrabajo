@@ -25,7 +25,7 @@ public class Adaptador extends ArrayAdapter<Datos> {
         TextView texto2 = (TextView) elemento.findViewById(R.id.miTexto2);
         texto2.setText(datos[position].getTexto2());
         TextView texto3 = (TextView) elemento.findViewById(R.id.miTexto3);
-        texto2.setText(datos[position].getTexto3());
+        texto3.setText(datos[position].getTexto3());
         return elemento;
     }
 }
