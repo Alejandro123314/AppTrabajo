@@ -1,6 +1,7 @@
 package com.example.aut2_02proyectoandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import androidx.recyclerview.widget.ListAdapter;
 
 import android.os.Bundle;
@@ -8,8 +9,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    int tamanio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +40,24 @@ public class MainActivity extends AppCompatActivity {
         listadoMarcas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            listadoMarcas.getItemAtPosition(i);
+
+                switch(i) {
+
+                    case 1:
+                        Intent siguiente = new Intent(MainActivity.this,Descripcion.class);
+                        startActivity(siguiente);
+                        break;
+                    case 2:
+                        // Lanzas la actividad 2
+                        break;
+                    case 3:
+                        // Lanzas la actividad 3
+                        break;
+                    case 4:
+                        // Lanzas la actividad 4
+                        break;
+                }
+
             }
         });
     }
