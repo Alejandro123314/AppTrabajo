@@ -40,12 +40,16 @@ public class MainActivity extends AppCompatActivity {
         listadoMarcas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String itemChosen = (String) adapterView.getItemAtPosition(i);
+                    Intent siguiente = new Intent(MainActivity.this, Descripcion.class);
+                    siguiente.putExtra("groceryItem", itemChosen);
+                    startActivity(siguiente);
 
-                switch(i) {
+
+                /*switch(i) {
 
                     case 1:
-                        Intent siguiente = new Intent(MainActivity.this,Descripcion.class);
-                        startActivity(siguiente);
+
                         break;
                     case 2:
                         // Lanzas la actividad 2
@@ -56,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     case 4:
                         // Lanzas la actividad 4
                         break;
-                }
+                }*/
 
             }
         });
